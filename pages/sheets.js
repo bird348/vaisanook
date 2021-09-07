@@ -144,7 +144,7 @@ export default function Sheets() {
                             return(
                                 <Link href={{
                                     pathname: data.unitPath,
-                                    query: {course: course, unit: data.unitNo}
+                                    query: {course: course, unit: data.unitNo, courseName: courseName}
                                 }} key={data.unitNo}>
                                     <a>
                                         <Text align="center" onClick={onClose}>

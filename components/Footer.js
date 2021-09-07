@@ -1,11 +1,19 @@
-import { Center, Text } from "@chakra-ui/react"
+import { Center, Text, VStack } from "@chakra-ui/react"
 
 export default function Footer() {
     return(
-        <Center bg="gray.500" w="100%" p={4} color="white" mt="5">
-            <Text fontSize="xs">
-                <span style={{color: "black", marginRight: "5px"}}>By</span> VaiSanook.com <span style={{color: "black", marginRight: "5px", marginLeft: "15px"}}>email:</span>  vaisanook@gmail.com
-            </Text>
-        </Center>
+        <VStack bg="gray.500" align="stretch">
+            <Center w="100%" p={4} color="white">
+                <Text fontSize="xs">
+                    <span style={{color: "black", marginRight: "5px"}}>By</span> Share to friends <span style={{color: "black", marginRight: "5px", marginLeft: "15px"}}>email:</span>  sharetofriends.wb@gmail.com
+                </Text>
+            </Center>
+            <Center>
+                <Text fontSize="xs" color="white" bg="black" mb="2" borderRadius="md" p="1">
+                    Deployed by ▲ Vercel
+                </Text>
+            </Center>
+        </VStack>
+        
     )
 }

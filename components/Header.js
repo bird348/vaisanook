@@ -35,7 +35,7 @@ export default function Header() {
         return (
           <>
             <Button size="md" ref={btnRef} colorScheme="" onClick={onOpen}>
-              <img src="https://img.icons8.com/ios-filled/40/000000/menu--v5.png"/>
+              <img src="https://img.icons8.com/ios-filled/30/000000/menu--v5.png"/>
             </Button>
             <Drawer
               isOpen={isOpen}
@@ -50,7 +50,7 @@ export default function Header() {
                 </Box>
                 
                 <DrawerHeader bg="gray.100">
-                  <Heading as="h3" size="lg">VaiSanook.com</Heading>
+                  <Heading as="h3" size="lg">Share to friends</Heading>
                 </DrawerHeader>
                 <hr />
                 <DrawerBody bg="gray.100">
@@ -59,7 +59,7 @@ export default function Header() {
                       <h2>
                         <AccordionButton>
                           <Box flex="1" textAlign="left">
-                            เลือกชุดวิชา
+                            ชุดวิชา
                           </Box>
                           <AccordionIcon />
                         </AccordionButton>
@@ -94,7 +94,7 @@ export default function Header() {
                       <h2>
                         <AccordionButton>
                           <Box flex="1" textAlign="left">
-                            เกี่ยวกับ VaiSanook.com
+                            เกี่ยวกับ Share to friends
                           </Box>
                           <AccordionIcon />
                         </AccordionButton>
@@ -114,20 +114,20 @@ export default function Header() {
 
     return(
         <Flex bg="gray.300" mb="5">
-            <Box h="50px" p="2">
-              <Link href="/">
-                <a>
-                  <Image src="https://img.icons8.com/ios-filled/40/000000/home.png" alt="KKBlog" />
-                </a>
-              </Link>
-            </Box>
             <Box p="2">
-              <Heading as="h2" size="xl">
-                VaiSanook.com
+              <Heading as="h3" size="lg">
+                Share to friends
               </Heading>
             </Box>
             <Spacer />
-            <Box p="2">
+            <Box pt="3" pr="1">
+              <Link href="/">
+                <a>
+                  <Image src="https://img.icons8.com/ios-filled/30/000000/home.png" alt="KKBlog" />
+                </a>
+              </Link>
+            </Box>
+            <Box pt="2" pb="2" pr="2">
                 {Menu()}
             </Box>
         </Flex>
