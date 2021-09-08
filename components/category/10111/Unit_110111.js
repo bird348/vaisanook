@@ -7,11 +7,11 @@ import {
 export default function Unit_110111() {
     return(
         <>
-            <Heading size="sm" pb="2">
+            <Heading size="md" pb="2">
                 Unit 1
             </Heading>
             <hr />
-            <Heading size="xs" pb="2" pt="2">
+            <Heading size="md" pb="2" pt="2">
                 การทักทายทั่วไป
             </Heading>
             <Text color="gray.500" pb="2" pl="5">
@@ -21,7 +21,7 @@ export default function Unit_110111() {
                 <br />
 		        Good evening. (ประมาณ 18:00 น. เป็นต้นไป)
             </Text>
-            <Heading size="xs" pb="2">
+            <Heading size="md" pb="2">
                 การทักทายแบบเป็นกันเอง
             </Heading>
             <Text as="i">

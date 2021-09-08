@@ -49,7 +49,7 @@ export default function Header() {
                 </Box>
                 
                 <DrawerHeader bg="gray.100">
-                  <Heading as="h3" size="lg">Share to friends</Heading>
+                  <Heading size="lg">Share to friends</Heading>
                 </DrawerHeader>
                 <hr />
                 <DrawerBody bg="gray.100">
@@ -114,8 +114,8 @@ export default function Header() {
     return(
       
         <Flex bg="gray.300" justify="center" w="100%">
-          <Box p="2" w={["300px", "450px", "600px"]}>
-            <Heading as="h3" size="lg">
+          <Box p="1" w={["300px", "450px", "600px"]}>
+            <Heading size="xl">
               Share to friends
             </Heading>
           </Box>

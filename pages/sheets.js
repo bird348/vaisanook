@@ -151,7 +151,7 @@ export default function Sheets() {
                     })}
                 </Box> : 
                 <Box>
-                    <Button colorScheme="gray" w={["280px", "75px", "75px"]} size="sm" onClick={onOpen}>
+                    <Button colorScheme="gray" w={["320px", "75px", "75px"]} size="sm" onClick={onOpen}>
                         เลือกหน่วย
                     </Button>
                     <Drawer placement="bottom" onClose={onClose} isOpen={isOpen}>
@@ -190,12 +190,12 @@ export default function Sheets() {
         <Layout title="สรุปวิชา">
             <Wrap justify="center">
                 <WrapItem>
-                    <Box mt="2" fontSize="sm">
+                    <Box mt="2">
                         {unitSelect()}
                     </Box>
                 </WrapItem>
                 <WrapItem>
-                    <Box p="3" fontSize={["20px", "15px", "15px"]}  w={["280px", "430px", "580px"]}>
+                    <Box p="3" fontSize={["15px", "10px", "10px"]}  w={["320px", "450px", "600px"]}>
                         {course == "10103" && <Home_10103 unit={unit} />}
                         {course == "10111" && <Home_10111 unit={unit} />}
                         {course == "10131" && <Home_10131 unit={unit} />}

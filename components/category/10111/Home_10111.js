@@ -6,7 +6,7 @@ import { Box, Heading } from "@chakra-ui/layout"
 export default function Home_10111({unit}) {
     return(
         <Box>
-        <Heading mb="3" size="md">ภาษาอังกฤษเพื่อการสื่อสาร</Heading>
+        <Heading mb="3" size="lg">ภาษาอังกฤษเพื่อการสื่อสาร</Heading>
         <hr />
            {unit == "1" && <Unit_110111 />}
            {unit == "2" && <Unit_210111 />}
