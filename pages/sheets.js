@@ -50,7 +50,6 @@ export default function Sheets() {
     const router = useRouter()
     const { course, unit, courseName } = router.query
     const [isLargerThan600] = useMediaQuery("(min-width: 600px)")
-    console.log(useMediaQuery)
     
     const unitSelect = () => {
         const dataSelect = [
@@ -151,7 +150,7 @@ export default function Sheets() {
                     })}
                 </Box> : 
                 <Box>
-                    <Button colorScheme="gray" w={["320px", "75px", "75px"]} size="sm" onClick={onOpen}>
+                    <Button colorScheme="gray" size="sm" onClick={onOpen}>
                         เลือกหน่วย
                     </Button>
                     <Drawer placement="bottom" onClose={onClose} isOpen={isOpen}>
@@ -188,14 +187,14 @@ export default function Sheets() {
 
     return(
         <Layout title="สรุปวิชา">
-            <Wrap justify="center">
+            <Wrap m="3" justify="center">
                 <WrapItem>
-                    <Box mt="2">
+                    <Box m="2" p="2" w={["100%", "120px", "120px"]} borderRightWidth={isLargerThan600 ? "2px" : null} borderRightColor={isLargerThan600 ? "green.400": null}>
                         {unitSelect()}
                     </Box>
                 </WrapItem>
                 <WrapItem>
-                    <Box p="3" fontSize={["15px", "10px", "10px"]}  w={["320px", "450px", "600px"]}>
+                    <Box p="3" fontSize={["15px", "10px", "10px"]}  w={["100%", "400px", "600px"]}>
                         {course == "10103" && <Home_10103 unit={unit} />}
                         {course == "10111" && <Home_10111 unit={unit} />}
                         {course == "10131" && <Home_10131 unit={unit} />}
