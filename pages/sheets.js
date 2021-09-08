@@ -195,7 +195,7 @@ export default function Sheets() {
                     </Box>
                 </WrapItem>
                 <WrapItem>
-                    <Box p="3" fontSize={["10px", "15px", "15px"]}  w={["280px", "430px", "580px"]}>
+                    <Box p="3" fontSize={["20px", "15px", "15px"]}  w={["280px", "430px", "580px"]}>
                         {course == "10103" && <Home_10103 unit={unit} />}
                         {course == "10111" && <Home_10111 unit={unit} />}
                         {course == "10131" && <Home_10131 unit={unit} />}
