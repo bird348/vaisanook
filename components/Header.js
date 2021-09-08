@@ -10,7 +10,6 @@ import {
     ListItem, 
     UnorderedList,
     Flex, 
-    Spacer, 
     useDisclosure, 
     DrawerHeader, 
     DrawerBody,
@@ -22,7 +21,7 @@ import {
     AccordionItem,
     AccordionButton,
     AccordionPanel,
-    AccordionIcon
+    AccordionIcon,
   } from "@chakra-ui/react"
 
 
@@ -113,24 +112,23 @@ export default function Header() {
       }
 
     return(
-        <Flex bg="gray.300" mb="5">
-            <Box p="2">
-              <Heading as="h3" size="lg">
-                Share to friends
-              </Heading>
-            </Box>
-            <Spacer />
-            <Box pt="3" pr="1">
-              <Link href="/">
-                <a>
-                  <Image src="https://img.icons8.com/ios-filled/30/000000/home.png" alt="KKBlog" />
-                </a>
-              </Link>
-            </Box>
-            <Box pt="2" pb="2" pr="2">
-                {Menu()}
-            </Box>
+      
+        <Flex bg="gray.300" justify="center" w="100%">
+          <Box p="2" w={["300px", "450px", "600px"]}>
+            <Heading as="h3" size="lg">
+              Share to friends
+            </Heading>
+          </Box>
+          <Box pt="3">
+            <Link href="/">
+              <a>
+                <Image src="https://img.icons8.com/ios-filled/30/000000/home.png" alt="KKBlog" />
+              </a>
+            </Link>
+          </Box>
+          <Box pt="2" pb="2" pl="2">
+              {Menu()}
+          </Box>
         </Flex>
-        
     )
 }

@@ -1,17 +1,17 @@
 import { 
-    Container,
+    Box,
     Heading,
     Text
  } from "@chakra-ui/react";
 
 export default function Unit_110111() {
     return(
-        <Container maxW="xl">
-            <Heading as="h3" size="lg" pb="2">
+        <>
+            <Heading size="sm" pb="2">
                 Unit 1
             </Heading>
             <hr />
-            <Heading as="h4" size="md" pb="2" pt="2">
+            <Heading size="xs" pb="2" pt="2">
                 การทักทายทั่วไป
             </Heading>
             <Text color="gray.500" pb="2" pl="5">
@@ -21,7 +21,7 @@ export default function Unit_110111() {
                 <br />
 		        Good evening. (ประมาณ 18:00 น. เป็นต้นไป)
             </Text>
-            <Heading as="h4" size="md" pb="2">
+            <Heading size="xs" pb="2">
                 การทักทายแบบเป็นกันเอง
             </Heading>
             <Text as="i">
@@ -44,6 +44,6 @@ export default function Unit_110111() {
                 <br />
                 Pretty good.
             </Text>
-        </Container>
+        </>
     )
 }

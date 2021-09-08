@@ -2,8 +2,8 @@ import { Center, Text, VStack } from "@chakra-ui/react"
 
 export default function Footer() {
     return(
-        <VStack bg="gray.500" align="stretch">
-            <Center w="100%" p={4} color="white">
+        <VStack bg="gray.500" mt="3" align="stretch">
+            <Center w="100%" p="2" color="white">
                 <Text fontSize="xs">
                     <span style={{color: "black", marginRight: "5px"}}>By</span> Share to friends <span style={{color: "black", marginRight: "5px", marginLeft: "15px"}}>email:</span>  sharetofriends.wb@gmail.com
                 </Text>
@@ -14,6 +14,5 @@ export default function Footer() {
                 </Text>
             </Center>
         </VStack>
-        
     )
 }

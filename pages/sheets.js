@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Layout from "../components/Layout";
+import { useMediaQuery } from "@chakra-ui/react"
 
 import Home_10103 from '../components/category/10103/Home_10103';
 import Home_10111 from '../components/category/10111/Home_10111';
@@ -28,9 +29,13 @@ import Home_99402 from '../components/category/99402/Home_99402';
 import Home_99409 from '../components/category/99409/Home_99409';
 
 import { 
+    Center,
+    Wrap,
+    WrapItem,
     Box, 
     Text,
     Button,
+    Divider,
     Drawer,
     DrawerOverlay,
     DrawerContent,
@@ -44,6 +49,8 @@ export default function Sheets() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const router = useRouter()
     const { course, unit, courseName } = router.query
+    const [isLargerThan600] = useMediaQuery("(min-width: 600px)")
+    console.log(useMediaQuery)
     
     const unitSelect = () => {
         const dataSelect = [
@@ -125,74 +132,97 @@ export default function Sheets() {
         ]
         return(
             <>
-                
-                <Button colorScheme="gray" size="sm" ml="3" onClick={onOpen}>
-                    เลือกหน่วย
-                </Button>
-                
-                
-                <Drawer placement="bottom" onClose={onClose} isOpen={isOpen}>
-                    <DrawerOverlay />
-                    <DrawerContent>
-                    <DrawerHeader borderBottomWidth="1px">
-                        <Text align="center">
-                            {course} {courseName}
-                        </Text>
-                    </DrawerHeader>
-                    <DrawerBody>
-                        {dataSelect.map((data) => {
-                            return(
-                                <Link href={{
-                                    pathname: data.unitPath,
-                                    query: {course: course, unit: data.unitNo, courseName: courseName}
-                                }} key={data.unitNo}>
-                                    <a>
-                                        <Text align="center" onClick={onClose}>
-                                            {data.unitList}
-                                        </Text>
-                                    </a>
-                                </Link>
-                            )
-                        })}
-                        
-                    </DrawerBody>
-                    </DrawerContent>
-                </Drawer>
+                {isLargerThan600 ? 
+                <Box mt="5" pt="5">
+                    {dataSelect.map((data) => {
+                        return(
+                            <Link href={{
+                                pathname: data.unitPath,
+                                query: {course: course, unit: data.unitNo, courseName: courseName}
+                            }} key={data.unitNo}>
+                                <a>
+                                    <Text align="center" onClick={onClose}>
+                                        {data.unitList}
+                                    </Text>
+                                    <Divider />
+                                </a>
+                            </Link>
+                        )
+                    })}
+                </Box> : 
+                <Box>
+                    <Button colorScheme="gray" w={["280px", "75px", "75px"]} size="sm" onClick={onOpen}>
+                        เลือกหน่วย
+                    </Button>
+                    <Drawer placement="bottom" onClose={onClose} isOpen={isOpen}>
+                        <DrawerOverlay />
+                        <DrawerContent>
+                        <DrawerHeader borderBottomWidth="1px">
+                            <Center>
+                                {course} {courseName}
+                            </Center>
+                        </DrawerHeader>
+                        <DrawerBody>
+                            {dataSelect.map((data) => {
+                                return(
+                                    <Link href={{
+                                        pathname: data.unitPath,
+                                        query: {course: course, unit: data.unitNo, courseName: courseName}
+                                    }} key={data.unitNo}>
+                                        <a>
+                                            <Text align="center" onClick={onClose}>
+                                                {data.unitList}
+                                            </Text>
+                                        </a>
+                                    </Link>
+                                )
+                            })}
+                        </DrawerBody>
+                        </DrawerContent>
+                    </Drawer>
+                </Box>
+                }
             </>
         )
     }
 
     return(
         <Layout title="สรุปวิชา">
-            <Box position="sticky">
-                {unitSelect()}
-            </Box>
-            <Box w="75%" m="3">
-                {course == "10103" && <Home_10103 unit={unit} />}
-                {course == "10111" && <Home_10111 unit={unit} />}
-                {course == "10131" && <Home_10131 unit={unit} />}
-                {course == "10141" && <Home_10141 unit={unit} />}
-                {course == "10151" && <Home_10151 unit={unit} />}
-                {course == "13413" && <Home_13413 unit={unit} />}
-                {course == "96101" && <Home_96101 unit={unit} />}
-                {course == "96102" && <Home_96102 unit={unit} />}
-                {course == "96304" && <Home_96304 unit={unit} />}
-                {course == "96305" && <Home_96305 unit={unit} />}
-                {course == "96404" && <Home_96404 unit={unit} />}
-                {course == "96407" && <Home_96407 unit={unit} />}
-                {course == "96408" && <Home_96408 unit={unit} />}
-                {course == "96411" && <Home_96411 unit={unit} />}
-                {course == "96412" && <Home_96412 unit={unit} />}
-                {course == "96413" && <Home_96413 unit={unit} />}
-                {course == "96414" && <Home_96414 unit={unit} />}
-                {course == "96415" && <Home_96415 unit={unit} />}
-                {course == "99201" && <Home_99201 unit={unit} />}
-                {course == "99202" && <Home_99202 unit={unit} />}
-                {course == "99301" && <Home_99301 unit={unit} />}
-                {course == "99321" && <Home_99321 unit={unit} />}
-                {course == "99402" && <Home_99402 unit={unit} />}
-                {course == "99409" && <Home_99409 unit={unit} />}
-            </Box>
+            <Wrap justify="center">
+                <WrapItem>
+                    <Box mt="2" fontSize="sm">
+                        {unitSelect()}
+                    </Box>
+                </WrapItem>
+                <WrapItem>
+                    <Box p="3" fontSize={["10px", "15px", "15px"]}  w={["280px", "430px", "580px"]}>
+                        {course == "10103" && <Home_10103 unit={unit} />}
+                        {course == "10111" && <Home_10111 unit={unit} />}
+                        {course == "10131" && <Home_10131 unit={unit} />}
+                        {course == "10141" && <Home_10141 unit={unit} />}
+                        {course == "10151" && <Home_10151 unit={unit} />}
+                        {course == "13413" && <Home_13413 unit={unit} />}
+                        {course == "96101" && <Home_96101 unit={unit} />}
+                        {course == "96102" && <Home_96102 unit={unit} />}
+                        {course == "96304" && <Home_96304 unit={unit} />}
+                        {course == "96305" && <Home_96305 unit={unit} />}
+                        {course == "96404" && <Home_96404 unit={unit} />}
+                        {course == "96407" && <Home_96407 unit={unit} />}
+                        {course == "96408" && <Home_96408 unit={unit} />}
+                        {course == "96411" && <Home_96411 unit={unit} />}
+                        {course == "96412" && <Home_96412 unit={unit} />}
+                        {course == "96413" && <Home_96413 unit={unit} />}
+                        {course == "96414" && <Home_96414 unit={unit} />}
+                        {course == "96415" && <Home_96415 unit={unit} />}
+                        {course == "99201" && <Home_99201 unit={unit} />}
+                        {course == "99202" && <Home_99202 unit={unit} />}
+                        {course == "99301" && <Home_99301 unit={unit} />}
+                        {course == "99321" && <Home_99321 unit={unit} />}
+                        {course == "99402" && <Home_99402 unit={unit} />}
+                        {course == "99409" && <Home_99409 unit={unit} />}
+                    </Box>
+                </WrapItem>
+            </Wrap>
         </Layout>
     )
 }

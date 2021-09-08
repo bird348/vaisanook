@@ -1,7 +1,6 @@
 import Footer from './Footer'
 import Header from './Header'
 import Head from 'next/head'
-import { VStack, Box } from '@chakra-ui/react'
 
 export default function Layout({ children, title }) {
     return(
@@ -14,20 +13,9 @@ export default function Layout({ children, title }) {
                 <meta property="author" content="Khomsan Khamprom" />
                 <meta property="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
-            <VStack align="stretch">
-                <Box>
-                    <Header />
-                </Box>
-                <Box>
-                    { children }
-                </Box>
-                <Box>
-                    <Footer  />
-                </Box>
-            </VStack>
-            
-            
-            
+            <Header />
+            { children }
+            <Footer  />
         </>
     )
 }
