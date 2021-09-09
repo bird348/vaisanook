@@ -143,7 +143,6 @@ export default function Sheets() {
                                     <Text align="center" onClick={onClose}>
                                         {data.unitList}
                                     </Text>
-                                    <Divider />
                                 </a>
                             </Link>
                         )
@@ -156,27 +155,27 @@ export default function Sheets() {
                     <Drawer placement="bottom" onClose={onClose} isOpen={isOpen}>
                         <DrawerOverlay />
                         <DrawerContent>
-                        <DrawerHeader borderBottomWidth="1px">
-                            <Center>
-                                {course} {courseName}
-                            </Center>
-                        </DrawerHeader>
-                        <DrawerBody>
-                            {dataSelect.map((data) => {
-                                return(
-                                    <Link href={{
-                                        pathname: data.unitPath,
-                                        query: {course: course, unit: data.unitNo, courseName: courseName}
-                                    }} key={data.unitNo}>
-                                        <a>
-                                            <Text align="center" onClick={onClose}>
-                                                {data.unitList}
-                                            </Text>
-                                        </a>
-                                    </Link>
-                                )
-                            })}
-                        </DrawerBody>
+                            <DrawerHeader borderBottomWidth="1px">
+                                <Center>
+                                    {course} {courseName}
+                                </Center>
+                            </DrawerHeader>
+                            <DrawerBody>
+                                {dataSelect.map((data) => {
+                                    return(
+                                        <Link href={{
+                                            pathname: data.unitPath,
+                                            query: {course: course, unit: data.unitNo, courseName: courseName}
+                                        }} key={data.unitNo}>
+                                            <a>
+                                                <Text align="center" onClick={onClose}>
+                                                    {data.unitList}
+                                                </Text>
+                                            </a>
+                                        </Link>
+                                    )
+                                })}
+                            </DrawerBody>
                         </DrawerContent>
                     </Drawer>
                 </Box>
@@ -187,14 +186,14 @@ export default function Sheets() {
 
     return(
         <Layout title="สรุปวิชา">
-            <Wrap m="3" justify="center">
+            <Wrap justify="center">
                 <WrapItem>
-                    <Box m="2" p="2" w={["100%", "120px", "120px"]} borderRightWidth={isLargerThan600 ? "2px" : null} borderRightColor={isLargerThan600 ? "green.400": null}>
+                    <Box m="2" p="2" w={["100%", "120px", "120px"]}>
                         {unitSelect()}
                     </Box>
                 </WrapItem>
                 <WrapItem>
-                    <Box p="3" fontSize={["15px", "10px", "10px"]}  w={["100%", "400px", "600px"]}>
+                    <Box pt="1" pl="5" fontSize={["15px", "10px", "10px"]}  w={["100%", "400px", "600px"]} borderLeftWidth={isLargerThan600 ? "2px" : null} borderLeftColor={isLargerThan600 ? "green.400": null}>
                         {course == "10103" && <Home_10103 unit={unit} />}
                         {course == "10111" && <Home_10111 unit={unit} />}
                         {course == "10131" && <Home_10131 unit={unit} />}

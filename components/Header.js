@@ -113,7 +113,7 @@ export default function Header() {
 
     return(
       
-        <Flex bg="gray.300" justify="center" w="100%">
+        <Flex justify="center">
           <Box p="1" w={["300px", "450px", "600px"]}>
             <Heading size="xl">
               Share to friends

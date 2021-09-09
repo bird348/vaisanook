@@ -7,10 +7,9 @@ import {
 export default function Unit_110111() {
     return(
         <>
-            <Heading size="md" pb="2">
+            <Heading as="h3" size="md" pb="2">
                 Unit 1
             </Heading>
-            <hr />
             <Heading size="md" pb="2" pt="2">
                 การทักทายทั่วไป
             </Heading>
@@ -44,6 +43,17 @@ export default function Unit_110111() {
                 <br />
                 Pretty good.
             </Text>
+            <p>x</p><br />
+            <p>x</p><br />
+            <p>x</p><br />
+            <p>x</p><br />
+            <p>x</p><br />
+            <p>x</p><br />
+            <p>x</p><br />
+            <p>x</p><br />
+            <p>x</p><br />
+            <p>x</p><br />
+            <p>x</p><br />
         </>
     )
 }
