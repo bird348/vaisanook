@@ -49,7 +49,10 @@ export default function Header() {
                 </Box>
                 
                 <DrawerHeader bg="gray.100">
-                  <Heading size="lg">Share to friends</Heading>
+                  <Heading size="lg" color="green.500">ALLS</Heading>
+                  <Text fontSize="md" color="gray.500">
+                    สังคมแห่งการเรียนรู้ตลอดชีวิต
+                  </Text>
                 </DrawerHeader>
                 <hr />
                 <DrawerBody bg="gray.100">
@@ -93,7 +96,7 @@ export default function Header() {
                       <h2>
                         <AccordionButton>
                           <Box flex="1" textAlign="left">
-                            เกี่ยวกับ Share to friends
+                            เกี่ยวกับ ALLS
                           </Box>
                           <AccordionIcon />
                         </AccordionButton>
@@ -114,19 +117,25 @@ export default function Header() {
     return(
       
         <Flex justify="center">
-          <Box p="1" w={["300px", "450px", "600px"]}>
-            <Heading size="xl">
-              Share to friends
+          <Box w={["300px", "450px", "600px"]} isTruncated>
+            <Heading size="xl" color="green.500">
+              ALLS {" "}
+              <Text as="span" fontSize="xs" color="yellow.500">
+              A Lifelong Learning Society
+              </Text>
             </Heading>
+            <Text fontSize="sm" color="gray.500">
+              สังคมแห่งการเรียนรู้ตลอดชีวิต
+            </Text>
           </Box>
-          <Box pt="3">
+          <Box pt="2" pl="3">
             <Link href="/">
               <a>
                 <Image src="https://img.icons8.com/ios-filled/30/000000/home.png" alt="KKBlog" />
               </a>
             </Link>
           </Box>
-          <Box pt="2" pb="2" pl="2">
+          <Box pt="1" pl="1">
               {Menu()}
           </Box>
         </Flex>

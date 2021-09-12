@@ -131,7 +131,7 @@ export default function Sheets() {
         return(
             <>
                 {isLargerThan600 ? 
-                <Box mt="5" pt="5">
+                <Box mt="100px">
                     {dataSelect.map((data) => {
                         return(
                             <Link href={{
@@ -139,7 +139,7 @@ export default function Sheets() {
                                 query: {course: course, unit: data.unitNo, courseName: courseName}
                             }} key={data.unitNo}>
                                 <a>
-                                    <Text align="center" onClick={onClose}>
+                                    <Text mt="1" fontSize="sm" align="center" onClick={onClose}>
                                         {data.unitList}
                                     </Text>
                                 </a>
@@ -155,7 +155,7 @@ export default function Sheets() {
                         <DrawerOverlay />
                         <DrawerContent>
                             <DrawerHeader borderBottomWidth="1px">
-                                <Center>
+                                <Center fontSize="md">
                                     {course} {courseName}
                                 </Center>
                             </DrawerHeader>
@@ -167,7 +167,7 @@ export default function Sheets() {
                                             query: {course: course, unit: data.unitNo, courseName: courseName}
                                         }} key={data.unitNo}>
                                             <a>
-                                                <Text align="center" onClick={onClose}>
+                                                <Text align="center" fontSize="sm" onClick={onClose}>
                                                     {data.unitList}
                                                 </Text>
                                             </a>
@@ -187,12 +187,12 @@ export default function Sheets() {
         <Layout title="สรุปวิชา">
             <Wrap justify="center">
                 <WrapItem>
-                    <Box m="2" p="2" w={["100%", "120px", "120px"]}>
+                    <Box w={["100%", "120px", "120px"]}>
                         {unitSelect()}
                     </Box>
                 </WrapItem>
                 <WrapItem>
-                    <Box pt="1" pl="5" fontSize={["15px", "10px", "10px"]}  w={["100%", "400px", "600px"]} borderLeftWidth={isLargerThan600 ? "2px" : null} borderLeftColor={isLargerThan600 ? "green.400": null}>
+                    <Box my="3" pl="3" fontSize={["15px", "10px", "10px"]}  w={["100%", "400px", "600px"]} borderLeftWidth={isLargerThan600 ? "2px" : null} borderLeftColor={isLargerThan600 ? "green.400": null}>
                         {course == "10103" && <Home_10103 unit={unit} />}
                         {course == "10111" && <Home_10111 unit={unit} />}
                         {course == "10131" && <Home_10131 unit={unit} />}
