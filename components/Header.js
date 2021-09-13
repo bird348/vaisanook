@@ -6,10 +6,10 @@ import {
     Heading, 
     Text,
     Button,
-    Image,
     ListItem, 
     UnorderedList,
     Flex, 
+    Image,
     useDisclosure, 
     DrawerHeader, 
     DrawerBody,
@@ -34,7 +34,7 @@ export default function Header() {
         return (
           <>
             <Button size="md" ref={btnRef} colorScheme="" onClick={onOpen}>
-              <img src="https://img.icons8.com/ios-filled/30/000000/menu--v5.png"/>
+              <Image src="https://img.icons8.com/ios-filled/30/000000/menu--v5.png" alt="สังคมแห่งการเรียนรู้ตลอดชีวิต" />
             </Button>
             <Drawer
               isOpen={isOpen}
@@ -107,7 +107,6 @@ export default function Header() {
                     </AccordionItem>
                   </Accordion>
                 </DrawerBody>
-
               </DrawerContent>
             </Drawer>
           </>

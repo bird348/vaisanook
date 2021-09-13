@@ -192,7 +192,11 @@ export default function Sheets() {
                     </Box>
                 </WrapItem>
                 <WrapItem>
-                    <Box my="3" pl="3" fontSize={["15px", "10px", "10px"]}  w={["100%", "400px", "600px"]} borderLeftWidth={isLargerThan600 ? "2px" : null} borderLeftColor={isLargerThan600 ? "green.400": null}>
+                    <Box my="3" pl="3" fontSize={["15px", "10px", "10px"]}  w={["100%", "400px", "600px"]} 
+                    borderLeftWidth={isLargerThan600 ? "2px" : null} 
+                    borderLeftColor={isLargerThan600 ? "green.400": null}
+                    userSelect="none"
+                    >
                         {course == "10103" && <Home_10103 unit={unit} />}
                         {course == "10111" && <Home_10111 unit={unit} />}
                         {course == "10131" && <Home_10131 unit={unit} />}

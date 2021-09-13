@@ -1,7 +1,7 @@
 
 import Unit_110111 from "./Unit_110111"
 import Unit_210111 from "./Unit_210111"
-import { Box, Heading} from "@chakra-ui/layout"
+import { Box, Heading} from "@chakra-ui/react"
 
 export default function Home_10111({unit}) {
     return(

@@ -1,9 +1,7 @@
 import { 
     Heading,
     Text,
-    Box,
-    Divider
- } from "@chakra-ui/layout"
+ } from "@chakra-ui/react"
 
 
 export default function Unit_210111() {

@@ -8,17 +8,16 @@ import {
 
 
 export default function Unit_110111() {
-
     return(
         <>
             <Heading size="md" pb="2" mb="2" borderBottomColor="red.500" borderBottomWidth="2px">Unit 1</Heading>
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">การทักทายทั่วไป</Heading>
             <Text pl="5" color="gray.500">
-                <Text as="span" color="green.500">Good morning.{" "}</Text>
+                <Text as="span" mr="1" color="green.500">Good morning.</Text>
                 (เช้าถึง 12:00 น.)<br />
-		        <Text as="span" color="green.500">Good afternoon.{" "}</Text>
+		        <Text as="span" mr="1" color="green.500">Good afternoon.</Text>
                 (บ่ายถึง 18:00 น.)<br />
-                <Text as="span" color="green.500">Good evening.{" "}</Text>
+                <Text as="span" mr="1" color="green.500">Good evening.</Text>
 		        (ประมาณ 18:00 น. เป็นต้นไป)
             </Text>
 
@@ -26,14 +25,14 @@ export default function Unit_110111() {
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">การทักทายแบบเป็นกันเอง</Heading>
             <Text fontStyle="italic">Hi/Hello ตามด้วยชื่อ และถามทุกข์สุขโดยใช้คำถาม เช่น</Text>
             <Text pl="5" mb="1">
-                <Text as="span" color="red.500">Hi,{" "}</Text>
-                <Text as="span" color="green.500">Somchai. How are you?{" "}</Text>
+                <Text as="span" color="red.500">Hi,</Text>
+                <Text as="span" color="green.500" mx="1">Somchai. How are you?</Text>
                 <br />
-                <Text as="span" color="red.500">Hello,{" "}</Text>
-                <Text as="span" color="green.500">Somsak. How are you doing?{" "}</Text>
+                <Text as="span" color="red.500">Hello,</Text>
+                <Text as="span" color="green.500" mx="1">Somsak. How are you doing?</Text>
                 <br />
-                <Text as="span" color="red.500">Hello,{" "}</Text>
-                <Text as="span" color="green.500">Sunee. How is it going?{" "}</Text>
+                <Text as="span" color="red.500">Hello,</Text>
+                <Text as="span" color="green.500" mx="1">Sunee. How is it going?</Text>
             </Text>
             <Text fontStyle="italic">การตอบคำทักทาย เช่น</Text>
             <Text pl="5" mb="1" color="green.500">
@@ -49,7 +48,7 @@ export default function Unit_110111() {
             </Text>
             <Text fontStyle="italic">บางอาจแสดงความดีใจที่ได้พบกันอีก เช่น</Text>
             <Text pl="5" mb="1" color="green.500">(It’s) good/nice to see you again.</Text>
-            <Text fontStyle="italic">แต่สำหรับผู้ที่เคยพบกันครั้งแรกให้ใช้เหมือนประโยคข้างบนแต่ไม่มีคำว่า {""}<Text as="span" color='red.500'>again</Text></Text>
+            <Text fontStyle="italic" mr="1">แต่สำหรับผู้ที่เคยพบกันครั้งแรกให้ใช้เหมือนประโยคข้างบนแต่ไม่มีคำว่า<Text as="span" color='red.500'>again</Text></Text>
             <Text pl="5" color="green.500">(It’s) good/nice to see you.</Text>
 
 
@@ -69,45 +68,45 @@ export default function Unit_110111() {
 
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">การสอบถามและให้ข้อมูลส่วนตัว</Heading>
             <Text pl="5">
-                <Text as="span" color="green.500">What’s your name?{" "}</Text>
-                <Text as="span" color="red.500">My name’s …(name).{" "}</Text>
+                <Text as="span" color="green.500" mr="1">What’s your name?</Text>
+                <Text as="span" color="red.500">My name’s …(name).</Text>
                 <br />
-                <Text as="span" color="green.500">How old are you?{" "}</Text>
-                <Text as="span" color="red.500">I’m …(age) years old.{" "}</Text>
+                <Text as="span" color="green.500" mr="1">How old are you?</Text>
+                <Text as="span" color="red.500">I’m …(age) years old.</Text>
                 <br />
-                <Text as="span" color="green.500">Where do you live?{" "}</Text>
-                <Text as="span" color="red.500">I live in Buriram. หรือ I live on Petchkasem Road.{" "}</Text>
+                <Text as="span" color="green.500" mr="1">Where do you live?</Text>
+                <Text as="span" color="red.500">I live in Buriram. หรือ I live on Petchkasem Road.</Text>
                 <br />
-                <Text as="span" color="green.500">Where are you from?{" "}</Text>
-                <Text as="span" color="red.500">I come from Thailand. หรือ I was born in Thailand.{" "}</Text>
+                <Text as="span" color="green.500" mr="1">Where are you from?</Text>
+                <Text as="span" color="red.500">I come from Thailand. หรือ I was born in Thailand.</Text>
                 <br />
-                <Text as="span" color="green.500">What do you do?{" "}</Text>
-                <Text as="span" color="red.500">I’m a teacher. หรือ I work for an accounting company.{" "}</Text>
+                <Text as="span" color="green.500" mr="1">What do you do?</Text>
+                <Text as="span" color="red.500">I’m a teacher. หรือ I work for an accounting company.</Text>
                 <br />
-                <Text as="span" color="green.500">What are your interests?{" "}</Text>
-                <Text as="span" color="red.500">Football and basketball.{" "}</Text>
+                <Text as="span" color="green.500" mr="1">What are your interests?</Text>
+                <Text as="span" color="red.500">Football and basketball.</Text>
                 <br />
-                <Text as="span" color="green.500">What are your hobbies?{" "}</Text>
-                <Text as="span" color="red.500">Football and basketball.{" "}</Text>
+                <Text as="span" color="green.500" mr="1">What are your hobbies?</Text>
+                <Text as="span" color="red.500">Football and basketball.</Text>
                 <br />
-                <Text as="span" color="green.500">What do you like to do in your free time?{" "}</Text>
-                <Text as="span" color="red.500">I like shopping and watching TV.{" "}</Text>
+                <Text as="span" color="green.500" mr="1">What do you like to do in your free time?</Text>
+                <Text as="span" color="red.500">I like shopping and watching TV.</Text>
                 <br />
-                <Text as="span" color="green.500">What is your favorite food?{" "}</Text>
-                <Text as="span" color="red.500">Stir-fried vegetables.{" "}</Text>
+                <Text as="span" color="green.500" mr="1">What is your favorite food?</Text>
+                <Text as="span" color="red.500">Stir-fried vegetables.</Text>
             </Text>
 
 
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">คำถาม คำตอบ Yes-no questions</Heading>
             <Text pl="5" pb="2">
-                Q: {" "}<Text as="span" color="green.500">Do you live at home with your parents?</Text><br />
-                A: {" "}<Text as="span" color="red.500">Yes, I do</Text><Text as="span" color="gray.500" mx="1">หรือ</Text><Text as="span" color="red.500">No, I live in an apartment.</Text><br />
-                Q: {" "}<Text as="span" color="green.500">Do you visit your family often?</Text><br />
-                A: {" "}<Text as="span" color="red.500">Yes, I visit them every weekend.</Text><Text as="span" color="gray.500" mx="1">หรือ</Text><Text as="span" color="red.500">No, I visit them once a year.</Text><br />
-                Q: {" "}<Text as="span" color="green.500">Are you the oldest among your brothers and sisters?</Text><br />
-                A: {" "}<Text as="span" color="red.500">Yes, I am.</Text><Text as="span" color="gray.500" mx="1">หรือ</Text><Text as="span" color="red.500">No, I have one older brother and two older sisters.</Text><br />
-                Q: {" "}<Text as="span" color="green.500">Are there a lot of people in your family?</Text><br />
-                A: {" "}<Text as="span" color="red.500">Yes, there are 7 people in my family.</Text><Text as="span" color="gray.500" mx="1">หรือ</Text><Text as="span" color="red.500">No, only my parents and me.</Text>
+                Q: <Text as="span" color="green.500" ml="1">Do you live at home with your parents?</Text><br />
+                A: <Text as="span" color="red.500" ml="1">Yes, I do</Text><Text as="span" color="gray.500" mx="1">หรือ</Text><Text as="span" color="red.500">No, I live in an apartment.</Text><br />
+                Q: <Text as="span" color="green.500" ml="1">Do you visit your family often?</Text><br />
+                A: <Text as="span" color="red.500" ml="1">Yes, I visit them every weekend.</Text><Text as="span" color="gray.500" mx="1">หรือ</Text><Text as="span" color="red.500">No, I visit them once a year.</Text><br />
+                Q: <Text as="span" color="green.500" ml="1">Are you the oldest among your brothers and sisters?</Text><br />
+                A: <Text as="span" color="red.500" ml="1">Yes, I am.</Text><Text as="span" color="gray.500" mx="1">หรือ</Text><Text as="span" color="red.500">No, I have one older brother and two older sisters.</Text><br />
+                Q: <Text as="span" color="green.500" ml="1">Are there a lot of people in your family?</Text><br />
+                A: <Text as="span" color="red.500" ml="1">Yes, there are 7 people in my family.</Text><Text as="span" color="gray.500" mx="1">หรือ</Text><Text as="span" color="red.500">No, only my parents and me.</Text>
             </Text>
 
 
@@ -217,18 +216,18 @@ export default function Unit_110111() {
 
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">คำถาม-คำตอบ เกี่ยวกับกิจวัตรประจำว้น</Heading>
             <Text pl="5" pb="2">
-                Q: {" "}<Text as="span" color="green.500">How do you start the day?</Text><br />
-                A: {" "}<Text as="span" color="red.500">I usually wake up at 7 a.m. and then have breakfast and go to work</Text><br />
-                Q: {" "}<Text as="span" color="green.500">How does your routine differ from weekdays to weekends?</Text><br />
-                A: {" "}<Text as="span" color="red.500">During the week, I wake up at 7 a.m. every day to go to work and come home at 7 p.m. after I have finished. On weekends I have no set routine so I can relax and do whatever comes up.</Text><br />
-                Q: {" "}<Text as="span" color="green.500">What is the most enjoyable time of week for you?</Text><br />
-                A: {" "}<Text as="span" color="red.500">The weekend, as I do not have to work and can relax.</Text><br />
-                Q: {" "}<Text as="span" color="green.500">What time do you start and finish work?</Text><br />
-                A: {" "}<Text as="span" color="red.500">I start work at 8:30 a.m. and finish at 5 p.m.</Text><br />
-                Q: {" "}<Text as="span" color="green.500">What do you do in the evenings?</Text><br />
-                A: {" "}<Text as="span" color="red.500">I either watch TV or do homework.</Text><br />
-                Q: {" "}<Text as="span" color="green.500">What do you do during the week?</Text><br />
-                A: {" "}<Text as="span" color="red.500">I work.</Text>
+                Q: <Text as="span" color="green.500" ml="1">How do you start the day?</Text><br />
+                A: <Text as="span" color="red.500" ml="1">I usually wake up at 7 a.m. and then have breakfast and go to work</Text><br />
+                Q: <Text as="span" color="green.500" ml="1">How does your routine differ from weekdays to weekends?</Text><br />
+                A: <Text as="span" color="red.500" ml="1">During the week, I wake up at 7 a.m. every day to go to work and come home at 7 p.m. after I have finished. On weekends I have no set routine so I can relax and do whatever comes up.</Text><br />
+                Q: <Text as="span" color="green.500" ml="1">What is the most enjoyable time of week for you?</Text><br />
+                A: <Text as="span" color="red.500" ml="1">The weekend, as I do not have to work and can relax.</Text><br />
+                Q: <Text as="span" color="green.500" ml="1">What time do you start and finish work?</Text><br />
+                A: <Text as="span" color="red.500" ml="1">I start work at 8:30 a.m. and finish at 5 p.m.</Text><br />
+                Q: <Text as="span" color="green.500" ml="1">What do you do in the evenings?</Text><br />
+                A: <Text as="span" color="red.500" ml="1">I either watch TV or do homework.</Text><br />
+                Q: <Text as="span" color="green.500" ml="1">What do you do during the week?</Text><br />
+                A: <Text as="span" color="red.500" ml="1">I work.</Text>
             </Text>
 
 
