@@ -3,13 +3,13 @@ import {
     Text,
     Box,
     SimpleGrid,
-    Divider
+    Divider,
  } from "@chakra-ui/react";
 
 
 export default function Unit_110111() {
     return(
-        <>
+        <Box>
             <Heading size="md" pb="2" mb="2" borderBottomColor="red.500" borderBottomWidth="2px">Unit 1</Heading>
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">การทักทายทั่วไป</Heading>
             <Text pl="5" color="gray.500">
@@ -22,7 +22,7 @@ export default function Unit_110111() {
             </Text>
 
 
-            <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">การทักทายแบบเป็นกันเอง</Heading>
+            {/* <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">การทักทายแบบเป็นกันเอง</Heading>
             <Text fontStyle="italic">Hi/Hello ตามด้วยชื่อ และถามทุกข์สุขโดยใช้คำถาม เช่น</Text>
             <Text pl="5" mb="1">
                 <Text as="span" color="red.500">Hi,</Text>
@@ -263,7 +263,7 @@ export default function Unit_110111() {
                 </Text>
             </Box>
             <Text textAlign="center" textColor="red.500" my="5">*** END ***</Text>
-            <Divider />
-        </>
+            <Divider /> */}
+        </Box>
     )
 }

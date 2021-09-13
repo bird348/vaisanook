@@ -1,12 +1,13 @@
 import { 
     Heading,
     Text,
+    Box
  } from "@chakra-ui/react"
 
 
 export default function Unit_210111() {
     return(
-        <>
+        <Box>
             <Heading size="md" pb="2" mb="2" borderBottomColor="red.500" borderBottomWidth="2px">Unit 2</Heading>
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">วิธีการแสดงความรู้สีกทั้งด้านบวก ด้านลบ และกลางๆ</Heading>
             <Text fontStyle="italic">Positive (ด้านบวก) เช่น</Text>
@@ -82,6 +83,6 @@ export default function Unit_210111() {
                     <Text as="span" color="green.500" mr="1">study early in the morning.</Text>
                     (ฉันมักจะอ่านหนังสือตอนเช้ามืดเสมอๆ)
                 </Text>
-        </>
+        </Box>
     )
 }
