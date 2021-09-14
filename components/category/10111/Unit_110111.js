@@ -9,7 +9,7 @@ import {
 
 export default function Unit_110111() {
     return(
-        <Box>
+        <>
             <Heading size="md" pb="2" mb="2" borderBottomColor="red.500" borderBottomWidth="2px">Unit 1</Heading>
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">การทักทายทั่วไป</Heading>
             <Text pl="5" color="gray.500">
@@ -47,18 +47,18 @@ export default function Unit_110111() {
                 How about yourself?
             </Text>
             <Text fontStyle="italic">บางอาจแสดงความดีใจที่ได้พบกันอีก เช่น</Text>
-            <Text pl="5" mb="1" color="green.500">(It’s) good/nice to see you again.</Text>
+            <Text pl="5" mb="1" color="green.500">{"(It’s) good/nice to see you again."}</Text>
             <Text fontStyle="italic" mr="1">แต่สำหรับผู้ที่เคยพบกันครั้งแรกให้ใช้เหมือนประโยคข้างบนแต่ไม่มีคำว่า<Text as="span" color='red.500'>again</Text></Text>
-            <Text pl="5" color="green.500">(It’s) good/nice to see you.</Text>
+            <Text pl="5" color="green.500">{"(It’s) good/nice to see you."}</Text>
 
 
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">การแนะนำตัวเอง</Heading>
             <Text pl="5" mb="1" color="green.500">
                 Good morning. My name is …(name).<br />
-                Hello I’m …(name).
+                {"Hello I’m …(name)."}
             </Text>
             <Text fontStyle="italic">กรณีเกริ่นนำก่อนบอกชื่อ(ไม่แน่ใจว่าเคยเจอกันมาก่อนหรือเปล่า) เช่น</Text>
-            <Text pl="5" color="green.500">Hi! I don’t think we’ve met. I’m …(name).</Text>
+            <Text pl="5" color="green.500">{"Hi! I don’t think we’ve met. I’m …(name)."}</Text>
 
             <Text mx="10%" mt="2" p="2" color="red.500" borderWidth="1px" borderColor="gray.500" borderRadius="md">
                 * เครื่องหมาย <Text as="span" color="green.500">/</Text> ให้เลือกใช้คำใดคำหนึ่ง <br />
@@ -68,11 +68,11 @@ export default function Unit_110111() {
 
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">การสอบถามและให้ข้อมูลส่วนตัว</Heading>
             <Text pl="5">
-                <Text as="span" color="green.500" mr="1">What’s your name?</Text>
-                <Text as="span" color="red.500">My name’s …(name).</Text>
+                <Text as="span" color="green.500" mr="1">{"What’s your name?"}</Text>
+                <Text as="span" color="red.500">{"My name’s …(name)."}</Text>
                 <br />
                 <Text as="span" color="green.500" mr="1">How old are you?</Text>
-                <Text as="span" color="red.500">I’m …(age) years old.</Text>
+                <Text as="span" color="red.500">{"I’m …(age) years old."}</Text>
                 <br />
                 <Text as="span" color="green.500" mr="1">Where do you live?</Text>
                 <Text as="span" color="red.500">I live in Buriram. หรือ I live on Petchkasem Road.</Text>
@@ -81,7 +81,7 @@ export default function Unit_110111() {
                 <Text as="span" color="red.500">I come from Thailand. หรือ I was born in Thailand.</Text>
                 <br />
                 <Text as="span" color="green.500" mr="1">What do you do?</Text>
-                <Text as="span" color="red.500">I’m a teacher. หรือ I work for an accounting company.</Text>
+                <Text as="span" color="red.500">{"I’m a teacher. หรือ I work for an accounting company."}</Text>
                 <br />
                 <Text as="span" color="green.500" mr="1">What are your interests?</Text>
                 <Text as="span" color="red.500">Football and basketball.</Text>
@@ -112,44 +112,44 @@ export default function Unit_110111() {
 
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">การใช้คำย่อ<Text as="span" color="red.500" ml="1">(ในวงเล็บ คือ คำเต็ม)</Text></Heading>
             <Text pl="5" pb="2">
-                <Text as="span" color="green.500">My name'</Text>
+                <Text as="span" color="green.500">{"My name'"}</Text>
                 <Text as="span" color="red.500" mr="1">s</Text>
-                <Text as="span" color="green.500">Suree and I'</Text>
+                <Text as="span" color="green.500">{"Suree and I'"}</Text>
                 <Text as="span" color="red.500" mr="1">m</Text>
                 <Text as="span" color="green.500">the second youngest in my family.</Text>
                 <Text as="span" color="red.500" ml="1">(is, am)</Text>
                 <br />
-                <Text as="span" color="green.500">Siroj met Sira at the university and they’</Text>
+                <Text as="span" color="green.500">{"Siroj met Sira at the university and they’"}</Text>
                 <Text as="span" color="red.500" mr="1">re</Text>
                 <Text as="span" color="green.500">friends now.</Text>
                 <Text as="span" color="red.500" ml="1">(are)</Text>
                 <br />
-                <Text as="span" color="green.500">Ken'</Text>
+                <Text as="span" color="green.500">{"Ken'"}</Text>
                 <Text as="span" color="red.500" mr="1">s</Text>
                 <Text as="span" color="green.500">studied at STOU.</Text>
                 <Text as="span" color="red.500" ml="1">(has)</Text>
                 <br />
-                <Text as="span" color="green.500">I'</Text>
+                <Text as="span" color="green.500">{"I'"}</Text>
                 <Text as="span" color="red.500" mr="1">ve</Text>
                 <Text as="span" color="green.500">got an elder brother.</Text>
                 <Text as="span" color="red.500" ml="1">(have)</Text>
                 <br />
-                <Text as="span" color="green.500">We'</Text>
+                <Text as="span" color="green.500">{"We'"}</Text>
                 <Text as="span" color="red.500" mr="1">d</Text>
                 <Text as="span" color="green.500">been there before he arrived.</Text>
                 <Text as="span" color="red.500" ml="1">(had)</Text>
                 <br />
-                <Text as="span" color="green.500">What'</Text>
+                <Text as="span" color="green.500">{"What'"}</Text>
                 <Text as="span" color="red.500"mr="1">d</Text>
                 <Text as="span" color="green.500">you do yesterday?</Text>
                 <Text as="span" color="red.500" ml="1">(did)</Text>
                 <br />
-                <Text as="span" color="green.500">She'</Text>
+                <Text as="span" color="green.500">{"She'"}</Text>
                 <Text as="span" color="red.500" mr="1">ll</Text>
                 <Text as="span" color="green.500">be here soon.</Text>
                 <Text as="span" color="red.500" ml="1">(will)</Text>
                 <br />
-                <Text as="span" color="green.500">John'</Text>
+                <Text as="span" color="green.500">{"John'"}</Text>
                 <Text as="span" color="red.500" mr="1">d</Text>
                 <Text as="span" color="green.500">like to meet you.</Text>
                 <Text as="span" color="red.500" ml="1">(would)</Text>
@@ -264,6 +264,6 @@ export default function Unit_110111() {
             </Box>
             <Text textAlign="center" textColor="red.500" my="5">*** END ***</Text>
             <Divider />
-        </Box>
+        </>
     )
 }
