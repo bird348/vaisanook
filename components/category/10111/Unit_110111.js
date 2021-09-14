@@ -60,7 +60,7 @@ export default function Unit_110111() {
             <Text fontStyle="italic">กรณีเกริ่นนำก่อนบอกชื่อ(ไม่แน่ใจว่าเคยเจอกันมาก่อนหรือเปล่า) เช่น</Text>
             <Text pl="5" color="green.500">{"Hi! I don’t think we’ve met. I’m …(name)."}</Text>
 
-            <Text mx="10%" mt="2" p="2" color="red.500" borderWidth="1px" borderColor="gray.500" borderRadius="md">
+            <Text mx="10%" mt="2" p="2" color="red.500" borderWidth="1px" borderColor="gray.500">
                 * เครื่องหมาย <Text as="span" color="green.500">/</Text> ให้เลือกใช้คำใดคำหนึ่ง <br />
                 * คำใน  <Text as="span" color="green.500">()</Text> จะใส่หรือไม่ใส่ก็ได้
             </Text>
@@ -158,7 +158,7 @@ export default function Unit_110111() {
             
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">คำศัพท์เกี่ยวกับสมาชิกครอบครัว</Heading>
             <SimpleGrid columns={[1, null, 3]} spacing="10px" px="5" mb="1">
-                <Box bg="gray.100" borderRadius="md" boxShadow="md" p="6" rounded="md">
+                <Box bg="gray.100" boxShadow="md" p="6" rounded="md">
                     <Text color="green.500">
                         great grandparents<Text as="span" pl="2" color="gray.500">(ทวด)</Text><br />
                         great grandmother<Text as="span" pl="2" color="gray.500">(ยาย/ย่าทวด)</Text><br />
@@ -169,7 +169,7 @@ export default function Unit_110111() {
                         grandson<Text as="span" pl="2" color="gray.500">(หลานชาย(ลูกของลูก))</Text>
                     </Text>
                 </Box>
-                <Box bg="gray.100" borderRadiun="md" boxShadow="md" p="6" rounded="md">
+                <Box bg="gray.100" boxShadow="md" p="6" rounded="md">
                     <Text color="green.500">
                         parents<Text as="span" pl="2" color="gray.500">(บิดา/มารดา)</Text><br />
                         mother<Text as="span" pl="2" color="gray.500">(มารดา)</Text><br />
@@ -180,7 +180,7 @@ export default function Unit_110111() {
                         brother<Text as="span" pl="2" color="gray.500">(พี่ชาย/น้องชาย)</Text>
                     </Text>
                 </Box>
-                <Box bg="gray.100" borderRadius="ms" boxShadow="md" p="6" rounded="md">
+                <Box bg="gray.100" boxShadow="md" p="6" rounded="md">
                     <Text color="green.500">
                         aunt<Text as="span" pl="2" color="gray.500">(ป้า/น้า/อา)</Text><br />
                         uncle<Text as="span" pl="2" color="gray.500">(ลุง/น้า/อา)</Text><br />
@@ -244,7 +244,7 @@ export default function Unit_110111() {
 
 
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">คำศัพท์เกี่ยวกับงานบ้าน</Heading>
-            <Box bg="gray.100" mx="5" borderRadius="md" boxShadow="md" p="5" rounded="md">
+            <Box bg="gray.100" mx="5" boxShadow="md" p="5" rounded="md">
                 <Text color="green.500">
                     cook<Text as="span" pl="2" color="gray.500">ทำอาหาร</Text><br />
                     do/wash the dishes<Text as="span" pl="2" color="gray.500">ล้างจาน</Text><br />

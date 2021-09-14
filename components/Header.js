@@ -70,7 +70,7 @@ export default function Header() {
                         <UnorderedList>
                           {courseData.map((data) => {
                             return(
-                              <ListItem key={data.course}>
+                              <ListItem key={data.course} onClick={onClose}>
                                 <Link href={{
                                   pathname: data.coursePath,
                                   query: {
@@ -80,9 +80,7 @@ export default function Header() {
                                   }
                                 }}>
                                   <a>
-                                    <Text color="gray.500" onClick={onClose}>
                                       {data.courseName} ({data.course})
-                                    </Text>
                                   </a>
                                 </Link>
                               </ListItem>
@@ -116,10 +114,10 @@ export default function Header() {
     return(
       
         <Flex justify="center">
-          <Box w={["100%", "40px", "600px"]} isTruncated>
+          <Box w={["100%", "400px", "600px"]} isTruncated>
             <Heading size="xl" color="green.500">
               ALLS {" "}
-              <Text as="span" fontSize="xs" color="yellow.500">
+              <Text as="span" fontSize="xs" color="yellow.500" >
               A Lifelong Learning Society
               </Text>
             </Heading>

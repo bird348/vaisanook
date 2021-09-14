@@ -131,24 +131,27 @@ export default function Sheets() {
         return(
             <>
                 {isLargerThan600 ? 
-                <Box my="90px">
-                    {dataSelect.map((data) => {
-                        return(
-                            <Link href={{
-                                pathname: data.unitPath,
-                                query: {course: course, unit: data.unitNo, courseName: courseName}
-                            }} key={data.unitNo}>
-                                <a>
-                                    <Text mt="1" fontSize="sm" align="center" onClick={onClose}>
-                                        {data.unitList}
-                                    </Text>
-                                </a>
-                            </Link>
-                        )
-                    })}
+                <Box my="5">
+                    <ul>
+                        {dataSelect.map((data) => {
+                            return(
+                                <Text as="li" fontSize="sm" onClick={onClose} key={data.unitNo}>
+                                    <Link href={{
+                                        pathname: data.unitPath,
+                                        query: {course: course, unit: data.unitNo, courseName: courseName}
+                                    }} 
+                                    >
+                                        <a>
+                                            {data.unitList}
+                                        </a>
+                                    </Link>
+                                </Text>
+                            )
+                        })}
+                    </ul>
                 </Box> : 
                 <Box>
-                    <Button colorScheme="gray" size="sm" onClick={onOpen}>
+                    <Button colorScheme="gray" w="200px" size="md" onClick={onOpen} my="3">
                         เลือกหน่วย
                     </Button>
                     <Drawer placement="bottom" onClose={onClose} isOpen={isOpen}>
@@ -160,20 +163,22 @@ export default function Sheets() {
                                 </Center>
                             </DrawerHeader>
                             <DrawerBody>
+                                <ul>
                                 {dataSelect.map((data) => {
                                     return(
-                                        <Link href={{
-                                            pathname: data.unitPath,
-                                            query: {course: course, unit: data.unitNo, courseName: courseName}
-                                        }} key={data.unitNo}>
-                                            <a>
-                                                <Text align="center" fontSize="sm" onClick={onClose}>
+                                        <Text as="li" align="center" fontSize="sm" onClick={onClose} key={data.unitNo}>
+                                            <Link href={{
+                                                pathname: data.unitPath,
+                                                query: {course: course, unit: data.unitNo, courseName: courseName}
+                                            }} >
+                                                <a>
                                                     {data.unitList}
-                                                </Text>
-                                            </a>
-                                        </Link>
+                                                </a>
+                                            </Link>
+                                        </Text>
                                     )
                                 })}
+                                </ul>
                             </DrawerBody>
                         </DrawerContent>
                     </Drawer>
@@ -187,12 +192,12 @@ export default function Sheets() {
         <Layout title="สรุปวิชา">
             <Wrap justify="center">
                 <WrapItem>
-                    <Box w={["100%", "120px", "120px"]}>
+                    <Box pos="sticky" top="1" mx="5">
                         {unitSelect()}
                     </Box>
                 </WrapItem>
                 <WrapItem>
-                    <Box my="3" pl="3" fontSize={["15px", "10px", "10px"]}  w={["100%", "400px", "600px"]} 
+                    <Box my="3" px="3" fontSize={["15px", "10px", "10px"]}  w={["100%", "400px", "570px"]} 
                     borderLeftWidth={isLargerThan600 ? "2px" : null} 
                     borderLeftColor={isLargerThan600 ? "green.400": null}
                     userSelect="none"
