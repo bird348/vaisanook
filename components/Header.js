@@ -128,7 +128,7 @@ export default function Header() {
           <Box pt="2" pl="3">
             <Link href="/">
               <a>
-                <Image src="https://img.icons8.com/ios-filled/30/000000/home.png" alt="KKBlog" />
+                <Image src="https://img.icons8.com/ios-filled/30/000000/home.png" alt="alls" />
               </a>
             </Link>
           </Box>
