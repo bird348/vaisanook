@@ -116,7 +116,7 @@ export default function Header() {
     return(
       
         <Flex justify="center">
-          <Box w={["300px", "450px", "600px"]} isTruncated>
+          <Box w={["100%", "40px", "600px"]} isTruncated>
             <Heading size="xl" color="green.500">
               ALLS {" "}
               <Text as="span" fontSize="xs" color="yellow.500">

@@ -131,7 +131,7 @@ export default function Sheets() {
         return(
             <>
                 {isLargerThan600 ? 
-                <Box mt="100px">
+                <Box my="90px">
                     {dataSelect.map((data) => {
                         return(
                             <Link href={{
