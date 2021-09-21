@@ -48,7 +48,7 @@ export default function Unit_110111() {
             </Text>
             <Text fontStyle="italic">บางอาจแสดงความดีใจที่ได้พบกันอีก เช่น</Text>
             <Text pl="5" mb="1" color="green.500">{"(It’s) good/nice to see you again."}</Text>
-            <Text fontStyle="italic" mr="1">แต่สำหรับผู้ที่เคยพบกันครั้งแรกให้ใช้เหมือนประโยคข้างบนแต่ไม่มีคำว่า<Text as="span" color='red.500'>again</Text></Text>
+            <Text fontStyle="italic" mr="1">แต่สำหรับผู้ที่เคยพบกันครั้งแรกให้ใช้เหมือนประโยคข้างบนแต่ไม่มีคำว่า<Text as="u" color='red.500'> again</Text></Text>
             <Text pl="5" color="green.500">{"(It’s) good/nice to see you."}</Text>
 
 
@@ -67,7 +67,7 @@ export default function Unit_110111() {
 
 
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">การสอบถามและให้ข้อมูลส่วนตัว</Heading>
-            <Text pl="5">
+            <Text pl="5" color="gray.500">
                 <Text as="span" color="green.500" mr="1">{"What’s your name?"}</Text>
                 <Text as="span" color="red.500">{"My name’s …(name)."}</Text>
                 <br />
@@ -75,10 +75,14 @@ export default function Unit_110111() {
                 <Text as="span" color="red.500">{"I’m …(age) years old."}</Text>
                 <br />
                 <Text as="span" color="green.500" mr="1">Where do you live?</Text>
-                <Text as="span" color="red.500">I live in Buriram. หรือ I live on Petchkasem Road.</Text>
+                <Text as="span" color="red.500">I live in Buriram. </Text>
+                หรือ
+                <Text as="span" color="red.500"> I live on Petchkasem Road.</Text>
                 <br />
                 <Text as="span" color="green.500" mr="1">Where are you from?</Text>
-                <Text as="span" color="red.500">I come from Thailand. หรือ I was born in Thailand.</Text>
+                <Text as="span" color="red.500">I come from Thailand. </Text>
+                หรือ
+                <Text as="span" color="red.500"> I was born in Thailand.</Text>
                 <br />
                 <Text as="span" color="green.500" mr="1">What do you do?</Text>
                 <Text as="span" color="red.500">{"I’m a teacher. หรือ I work for an accounting company."}</Text>
@@ -157,7 +161,7 @@ export default function Unit_110111() {
             
             
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">คำศัพท์เกี่ยวกับสมาชิกครอบครัว</Heading>
-            <SimpleGrid columns={[1, null, 3]} spacing="10px" px="5" mb="1">
+            <SimpleGrid columns={[1, 2, 2]} spacing="10px" pl="5" mb="2">
                 <Box bg="gray.100" boxShadow="md" p="6" rounded="md">
                     <Text color="green.500">
                         great grandparents<Text as="span" pl="2" color="gray.500">(ทวด)</Text><br />
@@ -165,7 +169,7 @@ export default function Unit_110111() {
                         great grandfather<Text as="span" pl="2" color="gray.500">(ตา/ทวด)</Text><br />
                         grandmother<Text as="span" pl="2" color="gray.500">(ยาย/ย่า)</Text><br />
                         grandfather<Text as="span" pl="2" color="gray.500">(ตา/ปู่)</Text><br />
-                        grandmother<Text as="span" pl="2" color="gray.500">(หลานสาว(ลูกของลูก))</Text><br />
+                        granddaughter<Text as="span" pl="2" color="gray.500">(หลานสาว(ลูกของลูก))</Text><br />
                         grandson<Text as="span" pl="2" color="gray.500">(หลานชาย(ลูกของลูก))</Text>
                     </Text>
                 </Box>
@@ -244,7 +248,7 @@ export default function Unit_110111() {
 
 
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">คำศัพท์เกี่ยวกับงานบ้าน</Heading>
-            <Box bg="gray.100" mx="5" boxShadow="md" p="5" rounded="md">
+            <Box bg="gray.100" mb="2" boxShadow="md" pl="5" py="5" rounded="md">
                 <Text color="green.500">
                     cook<Text as="span" pl="2" color="gray.500">ทำอาหาร</Text><br />
                     do/wash the dishes<Text as="span" pl="2" color="gray.500">ล้างจาน</Text><br />
@@ -263,7 +267,6 @@ export default function Unit_110111() {
                 </Text>
             </Box>
             <Text textAlign="center" textColor="red.500" my="5">*** END ***</Text>
-            <Divider />
         </>
     )
 }

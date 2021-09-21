@@ -3,12 +3,14 @@ import Link from "next/link"
 import courseData from "./data/CourseData"
 import {
     Box, 
+    Flex,
+    Spacer,
+    Center,
     Heading, 
     Text,
     Button,
     ListItem, 
     UnorderedList,
-    Flex, 
     Image,
     useDisclosure, 
     DrawerHeader, 
@@ -22,6 +24,7 @@ import {
     AccordionButton,
     AccordionPanel,
     AccordionIcon,
+    Divider
   } from "@chakra-ui/react"
 
 
@@ -33,7 +36,7 @@ export default function Header() {
       
         return (
           <>
-            <Button size="md" ref={btnRef} colorScheme="" onClick={onOpen}>
+            <Button size="md" ref={btnRef} colorScheme="whiteAlpha" onClick={onOpen}>
               <Image src="https://img.icons8.com/ios-filled/30/000000/menu--v5.png" alt="สังคมแห่งการเรียนรู้ตลอดชีวิต" />
             </Button>
             <Drawer
@@ -112,29 +115,32 @@ export default function Header() {
       }
 
     return(
-      
-        <Flex justify="center">
-          <Box w={["100%", "400px", "600px"]} isTruncated>
-            <Heading size="xl" color="green.500">
-              ALLS {" "}
-              <Text as="span" fontSize="xs" color="yellow.500" >
-              A Lifelong Learning Society
+      <>
+        <Center>
+          <Flex p="1" w={["100%", "768px", "1200px"]}>
+            <Box py="1" pl="3" w={["90%", "400px", "600px"]} isTruncated>
+              <Heading size="xl" color="green.500" w="700px">
+                <Link href="/">
+                  <a>
+                    ALLS {" "}
+                  </a>
+                </Link>
+                <Text as="span" fontSize="sm" color="yellow.500" >
+                A Lifelong Learning Society
+                </Text>
+              </Heading>
+              <Text fontSize="sm" color="gray.500">
+                สังคมแห่งการเรียนรู้ตลอดชีวิต
               </Text>
-            </Heading>
-            <Text fontSize="sm" color="gray.500">
-              สังคมแห่งการเรียนรู้ตลอดชีวิต
-            </Text>
-          </Box>
-          <Box pt="2" pl="3">
-            <Link href="/">
-              <a>
-                <Image src="https://img.icons8.com/ios-filled/30/000000/home.png" alt="alls" />
-              </a>
-            </Link>
-          </Box>
-          <Box pt="1" pl="1">
+            </Box>
+            <Spacer />
+            <Center pb="3">
               {Menu()}
-          </Box>
-        </Flex>
+            </Center>
+          </Flex>
+          
+        </Center>
+        <Divider />
+      </>
     )
 }

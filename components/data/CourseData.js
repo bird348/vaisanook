@@ -1,6 +1,4 @@
 
-
-
 const courseData = [
     {
         course: "10103",
