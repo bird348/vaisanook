@@ -3,7 +3,6 @@ import {
     Text,
     Box,
     SimpleGrid,
-    Divider,
  } from "@chakra-ui/react";
 
 
