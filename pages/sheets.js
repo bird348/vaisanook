@@ -138,7 +138,7 @@ export default function Sheets() {
                         </Box>
                         : null
                     }
-                        <Box my="3" px="3" fontSize={["10px", "12px", "15px"]} w={{sm: "100%", md: "540px", lg: "800px"}}
+                        <Box my="3" px="3" fontSize={["10px", "12px", "12px"]} w={{sm: "100%", md: "540px", lg: "800px"}}
                         borderLeftWidth={isLargerThan600 ? "2px" : null} 
                         borderLeftColor={isLargerThan600 ? "green.400": null}
                         userSelect="none"
