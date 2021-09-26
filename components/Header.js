@@ -81,7 +81,7 @@ export default function Header() {
                                     unit: data.unit, 
                                     courseName: data.courseName
                                   }
-                                }}>
+                                }} prefetch>
                                   <a>
                                       {data.courseName} ({data.course})
                                   </a>

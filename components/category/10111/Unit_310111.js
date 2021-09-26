@@ -4,7 +4,7 @@ import { Box, Heading, Text } from "@chakra-ui/react"
 export default function Unit_310111() {
     return(
         <>
-            <Heading size="md" pb="2" mb="2" borderBottomColor="red.500" borderBottomWidth="2px">Unit 4</Heading>
+            <Heading size="md" pb="2" mb="2" borderBottomColor="red.500" borderBottomWidth="2px">Unit 3</Heading>
 
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">การขอร้อง หมายถึง การขอร้องให้บุคคลอื่นช่วยกระทำบางสิ่งบางอย่างให้</Heading>
             <Text fontStyle="italic" color="gray.500">
@@ -176,8 +176,8 @@ export default function Unit_310111() {
                     {"I don’t think so."}
                     <Text as="span" color="gray.500"> (+ เหตุผล) </Text>
                 </Text>
-                <Text color="red.400" pl="3"
-                >{"I’m afraid I can’t."}
+                <Text color="red.400" pl="3">
+                    {"I’m afraid I can’t."}
                     <Text as="span" color="gray.500"> (+ เหตุผล) </Text>
                 </Text>
             </Box>

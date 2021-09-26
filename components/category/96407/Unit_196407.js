@@ -4,10 +4,13 @@ export default function Unit_196407() {
 
     return(
         <>
-            <Heading size="md" pb="2" mb="2" borderBottomColor="red.500" borderBottomWidth="2px">หน่วยที่ 1</Heading>
+            <Heading size="md" pb="2" mb="2" borderBottomColor="red.500" borderBottomWidth="2px">
+                หน่วยที่ 1 <br />
+                ความรู้เบื้องต้นเกี่ยวกับการพัฒนาระบบสารสนเทศ
+            </Heading>
 
             <Heading size="sm" pl="2" py="2" my="2" borderLeftColor="yellow.400" borderLeftWidth="10px">
-                ความรู้เบื้องต้นเกี่ยวกับการพัฒนาระบบสารสนเทศ
+                ความรู้เบื้องตันก่อนการพัฒนาระบบสารสนเทศ
             </Heading>
             <Heading size="xs">เหตุผลและแนวทางในการพัฒนาระบบสารสนเทศ</Heading>
             <Box pl="5" mt="1">
